@@ -1,6 +1,5 @@
 import numpy as np
 import numpy.linalg as LA
-from dmatrix import Dmatrix
 from tensor import Tensor3d, Tensor_type
 from element_output_data import ElementOutputData
 
@@ -83,7 +82,7 @@ class C3D8:
         return matKet
 
     def makeDematrix(self):
-        matD = Dmatrix(self.young, self.poisson).makeDematrix()
+        matD = self.material.De
         return matD
 
     def makeJmatrix(self, a, b, c):
