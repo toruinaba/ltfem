@@ -1,6 +1,6 @@
 import numpy as np
 import numpy.linalg as LA
-from Tensor import Tensor3d, Tensor_type
+from tensor import Tensor3d, Tensor_type
 
 
 class Multiline_isotropic_hardening:

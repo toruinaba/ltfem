@@ -1,8 +1,8 @@
 import numpy as np
 import numpy.linalg as LA
-from Dmatrix import Dmatrix
-from Tensor import Tensor3d, Tensor_type
-from ElementOutputData import ElementOutputData
+from dmatrix import Dmatrix
+from tensor import Tensor3d, Tensor_type
+from element_output_data import ElementOutputData
 
 class C3D8:
     NODENUM = 8

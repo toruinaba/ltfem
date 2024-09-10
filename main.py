@@ -1,10 +1,10 @@
 import copy
-from Node import Node
-from MaterialSet import MaterialSet
-from MisesMaterial import Multiline_isotropic_hardening, Linear_isotropic_hardening
-from Boundary import Boundary
-from FEM import FEM
-from C3D8 import C3D8
+from node import Node
+from material_set import MaterialSet
+from mises_material import Multiline_isotropic_hardening, Linear_isotropic_hardening
+from boundary import Boundary
+from fem import FEM
+from element import C3D8
 
 def main():
     node1 = Node(1, 0.0, 0.0, 0.0)
@@ -134,7 +134,7 @@ def main():
     #plt.plot(mat.p_strains, mat.stresses, ":")
     plt.show()
 
-    fem1.outputTxt("test")
+    fem2.outputTxt("test")
 
 if __name__ == "__main__":
     main()
